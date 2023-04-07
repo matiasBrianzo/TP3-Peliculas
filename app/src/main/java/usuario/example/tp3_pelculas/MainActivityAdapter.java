@@ -49,8 +49,6 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
                 .into(holder.fotoProducto);
         holder.resena.setText(peliculas.get(position).getResena());
       holder.resena.setMovementMethod(new ScrollingMovementMethod());
-      //  holder.actor.setText(peliculas.get(position).getActor());
-      //  holder.director.setText(peliculas.get(position).getDirector());
     }
 
     @Override
@@ -79,13 +77,9 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
                     bundle.putSerializable("pelicula", peliculas.get(getAdapterPosition()));
 
                     intent.putExtras(bundle);
-
                     v.getContext().startActivity(intent);
                 }
             });
-          //  actor = itemView.findViewById(R.id.tvactoresprincipales);
-           // director = itemView.findViewById(R.id.tvdirector);
-
         }
     }
 
